@@ -57,6 +57,19 @@
       font-size: 16px;
       color: #333; /* Темный цвет текста для контраста */
     }
+     /* Стиль для информационных блоков */
+    .info-block {
+      width: 90%;
+      margin: 30px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.5;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
     /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
       .carousel-container {
@@ -67,9 +80,16 @@
         margin-bottom: 20px;
       }
       .carousel img {
-        max-height: 200px; /* Уменьшаем высоту изображений на мобильных устройствах */
+        max-height: 200px;
+      }
+      .info-block {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
       }
     }
+    /* Адаптивность для мобильных устройств */
+    
   </style>
 </head>
 <body>
@@ -111,6 +131,12 @@
       </div>
       <p class="description">Принимаем с животными. Маленькая собачка Цена: 300 Руб./Сут. Большая собачка Цена: 500 Руб./Сут.</p>
     </div>
+  </div>
+   <!-- Информационный блок между рядами каруселей -->
+  <div class="info-block">
+    <h2>Информация для отдыхающих:</h2>
+    <p>Возим на экскурсии, всю подробную информацию по экскурсиям можно уточнить у Сергея.</p>
+    <p>Стрирка - 200 руб. с нашим порошком, 150 руб. с вашим</p>
   </div>
   <!-- 2-ой ряд каруселей -->
   <div class="carousel-container">
